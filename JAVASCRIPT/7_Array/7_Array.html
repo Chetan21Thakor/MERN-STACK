@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 7 : Array In Javascript</title>
+    <script src="Array.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <article>
+        <div class="content">
+          <header>
+            <h1>Array In Javascript</h1>
+          </header>
+
+          <strong><q>What is Array and Why we need a Array?</q></strong>
+          <p>
+            If we are want to store multiple value in one single variable at
+            contiguous memory location then we have to use Array.<br />
+            <br />
+            Array is a special Type of Object which can store anything inside
+            it.
+            <br />
+            <br />
+            <dfn
+              >Array is list (collection) of the multiple value or item which
+              store in one single variable.</dfn
+            >
+          </p>
+          <strong><q>How to Create Array?</q></strong>
+          <p>There are two way of creating a Array</p>
+          <ol>
+            <li>using Literal method</li>
+            <li>using Constructor method</li>
+          </ol>
+          <p><strong>1.using Literal method</strong></p>
+          <pre>
+        <code>
+            //* literal method 
+
+            let emptyArr=[];
+            let nums=[1,2,3,4];
+            let color=["pink",'red',"black","yellow"];
+            let pair=[[1,2],[3,4],[5,6],[7,8],[9,0]];
+            let person=["chetan",24,"software engineer"];
+            let mixedArray=[1,2,3,"4","hi how are you?",{name :"chetan",age:21},[1,2,3,4,[1,2,3,]],hey,true,null, undefined];
+        </code>
+      </pre>
+          <hr />
+          <p><strong>2.using Constructor method</strong></p>
+          <pre>
+        <code>
+            //* using constructor method
+
+            let array=Array(1,2,3);
+            let array1=Array(20).fill(1);
+            let array2=Array(20);
+        </code>
+      </pre>
+          <p>
+            Note: <br />
+            <br />
+            ❑ Array constructor is mostly used when we want to create an empty
+            array with the given length
+          </p>
+          <hr />
+          <p>
+            Javascript Array is dynamic sized means it's size changed at run
+            time and it's store n number element inside it. <br />
+            <br />
+            Javascript Array is dynamic typed means you store any type of data
+            inside it.also you can create mixedArray in js.<br />
+            <br />
+            Javascript variable is to mush power full it's can hold anything in
+            js which you can imagine in js.
+          </p>
+          <p>
+            Note:  <br>
+                ❑ typeof array is not “Array”, it's an “Object”. <br>
+                ❑ Array is a special type of object <br>
+                ❑ Arrays are mutable. <br>
+          </p>
+        </div>
+      </article>
+      <hr>
+      <article>
+        <div class="content">
+            <header>
+                <h4>Array Indexing</h4>
+            </header>
+            <p>Javascript Array has two type of Indexing</p>
+            <ol>
+                <li>Positive Indexing : it's start from 0.it's value increase left to right.</li>
+                <li>Negative Indexing : it's start from -1. it's value decrease right to left.</li>
+            </ol>
+            <img src="./Screenshot 2026-09-03 170429.png">
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
