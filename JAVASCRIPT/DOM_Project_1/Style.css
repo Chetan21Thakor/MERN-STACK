@@ -1,0 +1,142 @@
+:root {
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    color: #172033;
+    background: #eef3f8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    background-color: #eef3f8;
+    transition: background-color 350ms ease;
+}
+
+main {
+    width: min(100%, 520px);
+}
+
+.content {
+    padding: 12px;
+}
+
+#box {
+    padding: clamp(28px, 7vw, 52px);
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.76);
+    box-shadow: 0 24px 60px rgba(38, 55, 77, 0.18);
+    backdrop-filter: blur(14px);
+}
+
+header {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+h1 {
+    color: #172033;
+    font-size: clamp(2rem, 7vw, 3.15rem);
+    line-height: 1;
+    letter-spacing: -1.5px;
+}
+
+#input {
+    display: grid;
+    gap: 14px;
+}
+
+button,
+input {
+    min-height: 52px;
+    width: 100%;
+    border-radius: 12px;
+    font: inherit;
+}
+
+button {
+    border: 0;
+    padding: 0 20px;
+    color: #ffffff;
+    background: #2f6fed;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 8px 18px rgba(47, 111, 237, 0.22);
+    transition: transform 180ms ease, background-color 180ms ease, box-shadow 180ms ease;
+}
+
+button:hover {
+    background: #215bd0;
+    box-shadow: 0 11px 24px rgba(47, 111, 237, 0.3);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+button:focus-visible,
+input:focus-visible {
+    outline: 3px solid rgba(47, 111, 237, 0.35);
+    outline-offset: 3px;
+}
+
+form {
+    width: 100%;
+}
+
+input {
+    border: 1px solid #cbd5e1;
+    padding: 0 16px;
+    color: #172033;
+    background: rgba(255, 255, 255, 0.9);
+    transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+input::placeholder {
+    color: #7b8798;
+}
+
+input:focus {
+    border-color: #2f6fed;
+    box-shadow: 0 0 0 4px rgba(47, 111, 237, 0.12);
+    outline: 0;
+}
+
+#applyColorBtn {
+    background: #172033;
+    box-shadow: 0 8px 18px rgba(23, 32, 51, 0.18);
+}
+
+#applyColorBtn:hover {
+    background: #2b3850;
+    box-shadow: 0 11px 24px rgba(23, 32, 51, 0.25);
+}
+
+#h2 {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid #d8e0e9;
+    color: #536176;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+@media (max-width: 420px) {
+    body {
+        padding: 12px;
+    }
+
+    #box {
+        padding: 28px 20px;
+    }
+}
+
