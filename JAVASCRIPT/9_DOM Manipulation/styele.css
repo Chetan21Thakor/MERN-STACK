@@ -1,0 +1,33 @@
+h1{
+    background-color: aqua;
+    color: black;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+}
+.content{
+    width: 50%;
+    margin: 20px;
+    padding: 10px;
+    background-color: blue;
+    border: 1px solid black;
+}
+
+.content > p{
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    background-color: aqua;
+    color: black;
+    border: 1px solid black;
+}
+
+.box{
+    background-color: coral;
+    color: white;
+}
+
+.bgWhite{
+    background-color: darksalmon;
+    color: chartreuse;
+    border: 1px solid black;
+    font-size: 32px;
+}

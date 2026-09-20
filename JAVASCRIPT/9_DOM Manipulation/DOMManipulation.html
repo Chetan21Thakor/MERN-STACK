@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation in Javascript</title>
+  </head>
+  <body>
+    <header>
+      <h1 stye>DOM Manipulation</h1>
+    </header>
+    <main>
+      <article>
+        <div class="content">
+          <header>
+            <h3>DOM Manipulation Basic</h3>
+          </header>
+          <strong><q>What is DOM ? WHY need a DOM?</q></strong>
+          <p>
+            DOM stand for Document Object Model. When web page loaded on the
+            browser then browser converted html into tree like structure called
+            "DOM Tree".<br />
+            <br />
+            browser converted HTML Document into nodes.Comments Convert into a
+            CommentNode. extra space which we are add in html between two
+            element or between opening and closing tag excluding a text it's
+            store in textNode. <br />
+            <br />
+            Each and everything in DOM Tree it's Nodes.
+            <br />
+            <br />
+            This DOM TREE Store in One js Object called "Document". Document
+            object store all the data related a HTML document.<br />
+            Making changes in html using this document object of the js it's
+            called "DOM Manipulation".
+          </p>
+          <ul>
+            <li>We Need DOM Manipulation to create Interactive Webpages.</li>
+            <li>
+              We Need DOM Manipulation for Form validation using a Javascript.
+            </li>
+            <li>We Need DOM Manipulation for Animation.</li>
+            <li>
+              We Need DOM Manipulation for Change UI Dynamically based on
+              data.It's called "Data Driven UI".
+            </li>
+          </ul>
+        </div>
+      </article>
+      <article>
+        <div class="content">
+          <header>
+            <h3>Window Object</h3>
+          </header>
+          <strong
+            ><q>What is Window Object ? WHY need a Window Object?</q></strong
+          >
+          <br />
+          <img src="./Screenshot 2026-09-09 163730.png" alt="" />
+          <p>
+            Window object is global object . Window Object is global It'a means
+            each and everything which thing you can imagine in js that all thins
+            are store in Window object. It's parent of the all the object.
+            <br />
+            <br />
+            It's very big object . It's contain Multiple Object. <br />
+            <br />
+            IT's contain DOM , BOM , JS core. <br />
+            <br />
+            DOM for : Document Object Model. IT's contain all data or
+            information about a html document. It's provide Multiple methods and
+            property manipulate html document.
+            <br />
+            For Example <br />
+            <br />
+            innerHTML property to change content of the any element or HTML of
+            it's content. <br />
+            many more thing.
+            <br />
+            <br />
+            BOM for : Browser Object Model. IT's contain many data or
+            information about a Browser. It's provide Multiple methods and
+            property manipulate html document.
+            <br />
+            For Example <br />
+            <br />
+            alert() method is used to pop a alert message to user. <br />
+            many other things.
+            <br />
+          </p>
+        </div>
+      </article>
+      <article>
+        <div class="content">
+          <header>
+            <h4>Selection Of HTML Element Using Document Object</h4>
+          </header>
+          <p>
+            <strong
+              >There are 5 (five) methods of the document object which are used
+              select element from html document ^</strong
+            >
+          </p>
+          <ol>
+            <li>document.getElementsByTagName("tagName")</li>
+            <br />
+            This method take tag Name as argument and return all the HTML
+            element which created or available in html document using that
+            particular tag name.
+            <br />
+            <br />
+            It's return all element in HTMLCollection.
+            <li>document.getElementsByClassName("className")</li>
+            <br />
+            This method take class attribute value as argument and return all
+            the element which HTML element class attribute value same as
+            argument class name.
+            <br />
+            <br />
+            It's return all element in HTMLCollection.
+            <li>document.getElementById("IdName")</li>
+            <br />
+            This method take id attribute value as argument and return first
+            matched the element which HTML element id attribute value same as
+            argument id name.
+            <br />
+            <br />
+            It's return one Element.
+
+            <li>document.querySelector("IdName" or "tagName","className")</li>
+            <br />
+            querySelector("IdName" or "tagName","className") method is very
+            PowerFull method.
+            <br />
+            <br />
+            It's CSS Selector method internally it's use CSS Engine to select
+            element from HTML document.
+            <br />
+            <br />
+            Using this method you can select element from html Element using css
+            all css selector. You just have to pass any css selector as
+            argument.
+            <br />
+            <br />
+            It's return one Element.
+            <br />
+            <br />
+            <li>document.querySelectorAll("Any css Selector")</li>
+            <br />
+            querySelector("IdName" or "tagName","className") method is very
+            PowerFull method.
+            <br />
+            <br />
+            It's CSS Selector method internally it's use CSS Engine to select
+            element from HTML document.
+            <br />
+            <br />
+            Using this method you can select element from html Element using css
+            all css selector. You just have to pass any css selector as
+            argument.
+            <br />
+            <br />
+            It's return all Element in NodeList.
+          </ol>
+        </div>
+      </article>
+      <article>
+        <div class="content">
+          <header>
+            <h4>Manipulating a HTML</h4>
+          </header>
+          <p><strong>Using DOM You can Change 4 things of the html</strong></p>
+          <ol>
+            <li>Text of the Element or text of UI which is Visible on UI</li>
+            <li>
+              Content of the Element or which actual written in html Document
+            </li>
+            <li>
+              HTML of the Element or which actual written in html Document
+            </li>
+            <li>Attribute of the Element</li>
+          </ol>
+          <p>
+            TO Manipulate above all the thing in HTML Document Object provide
+            different Properties and methods.
+          </p>
+          <p>
+            How to access and change Text of the Element or text of UI which is
+            Visible on UI ?
+          </p>
+          <p><strong>1. element.innerText (property)</strong></p>
+          <p>
+            Using <strong>element.innerText </strong>: this property return
+            actual text which is Visible on UI. <br />
+            <br />
+            Using <strong>element.innerText </strong> property you can access
+            the value of text and set value for text. <br />
+            <br />
+            when not ignore css property visibility set as hidden that time it's
+            return a that style and return empty string.
+            <br />
+            <br />
+            It's return text which Visible on UI and With exact formate how it's
+            formate on UI.
+          </p>
+
+          <p><strong>2. element.textContent (property)</strong></p>
+          <p>
+            Using <strong>element.textContent </strong>: this property return
+            actual Content of the html element how you write content of html
+            element inside your html file. <br />
+            <br />
+            Using <strong>element.textContent </strong> property you can access
+            the value of Content and set value for Content. <br />
+            <br />
+            when ignore css property visibility set as hidden that time it's
+            also return actual text content of the html element.
+            <br />
+            <br />
+            It's return actual content of the html element With exact formate
+            how it's formate on html file.
+          </p>
+
+          <p><strong>3. element.innerHTML (property)</strong></p>
+          <p>
+            Using <strong>element.innerHTML </strong>: this property return
+            actual Html code of the html element how you write inside your html
+            file. <br />
+            <br />
+            Using <strong>element.innerHTML </strong> property you can access
+            the value of html and set value for html. <br />
+            <br />
+            when ignore css property visibility set as hidden that time it's
+            also return actual html code of the html element.
+            <br />
+            <br />
+            It's return actual html of the html element With exact formate how
+            it's formate on html file.
+          </p>
+          <p><strong>Attribute of the Element</strong></p>
+          <p>TO Manipulate a Attribute Of Element it's Provide to methods</p>
+          <ol>
+            <li>getAttribute("Name of the Attribute")</li>
+            <br />
+            :It'a value of that particular attribute if set in element if not
+            present or not set value for it's then it's return empty string.
+            <br />
+            <br />
+            <li>
+              setAttribute("Name of the Attribute","value of the attribute")
+            </li>
+            <br />
+            :It's take two arguments first name of the attribute which value you
+            are want to change if not present that it's attribute then add that
+            and set value for it's.
+            <br />
+            <br />
+            If attribute already present then it's replace it's value with new
+            value which you pass as second argument.
+            <li>Using attributes (Property)</li>
+            :This property return list or collection of the all attribute which
+            present or set for that particular element in NamedNodeMap.
+            <br />
+            it's has index value using index value you can access all property
+            of the this list.
+            <br />each attribute has name and value using this to property you
+            can easily access the name of attribute and value of that attribute
+            you also can change it.
+          </ol>
+        </div>
+      </article>
+      <article>
+        <div class="content">
+          <header>
+            <h4>Manipulating CSS Of the Element using a JS DOM</h4>
+          </header>
+          <p>
+            <strong>How to change CSS of the HTML Element Using JS DOM</strong>
+          </p>
+          <p>There are 5 Five way to change CSS of HTML Element.</p>
+          <ol>
+            <li>Using setAttribute() Method</li>
+            <li>Using style property</li>
+            <li>Using cssText property</li>
+            <li>Using className property</li>
+            <li>Using classList property</li>
+          </ol>
+          <p><strong>1.Using setAttribute() Method</strong></p>
+          <p>
+            <code>setAttribute("style","cssProperty:value;")</code>using a
+            setAttribute() method you can direct set value for style attribute.
+            <br />
+            <br />
+            it's direct apply as inline css and if already inline css written
+            for that particular element then this replace it.
+          </p>
+
+          <p><strong>2. Using style property</strong></p>
+          <p>
+            <code>element.style.cssProperty="value"</code>using this property
+            you can direct access the css property inside js but make sure you
+            are write css property in camel case not like css kebab case.
+            <br />
+            <br />
+            It's direct apply as inline css and if already inline css written
+            for that particular element then this replace it.
+          </p>
+          <p><strong>3. Using cssText property</strong></p>
+          <p>
+            <code
+              >element.style.cssText="css Property:value;property:value;"</code
+            >using this property you can direct write css how you write inside a
+            css file.
+            <br />
+            <br />
+            It's direct apply as inline css and if already inline css written
+            for that particular element then this replace it.
+          </p>
+          <p><strong>4. Using className property</strong></p>
+          <p>
+            <code>element.className</code>This property return all the class
+            which set for that particular element in string by separating space.
+            <br />
+            Using this <code>element.className</code> Property we can set value
+            for class also but remember one thing it's replace or remove all the
+            old class name which set for that particular element.
+            <br />
+            <br />
+            first we write css for that class in css then we set that className
+            using this <code>element.className</code>.
+          </p>
+
+          <p><strong>5. Using classList property</strong></p>
+          <p>
+            <code>element.classList</code>This property return list or
+            collection of all the class which set for that particular element in
+            DOMTokenList.
+            <br />
+          </p>
+          <p>
+            <code>element.classList</code> This Property Provide 4 Method to add
+            New class , remove any class which present already , toggle any
+            class then last to check that element contain any class
+          </p>
+          <ol>
+            <li><code>element.classList.add("className")</code></li>
+            <br />
+            This Method take name of the class as argument which you are to add
+            in classList. It's not replace already present class it's just add
+            new class only.
+            <br />
+            <br />
+            One Time it's can add only one class.
+            <br />
+            <br />
+            <li><code>element.classList.remove("className")</code></li>
+            <br />
+            This Method take name of the class as argument which you are to
+            remove from classList. it's just remove that particular class only.
+            <br />
+            <br />
+            One Time it's can remove only one class.
+            <br />
+            <br />
+            <li><code>element.classList.toggle("className")</code></li>
+            <br />
+            This Method take name of the class as argument which you are to
+            toggle in classList. It's not replace already present class it's
+            just add new class only if not already present if already present
+            then this method remove from classList.
+            <br />
+            <br />
+            It's can remove or add a class.
+            <br />
+            <br />
+            <li><code>element.classList.contains("className")</code></li>
+            <br />
+            This Method take name of the class as argument and check it's
+            present in classList or not if present then it's return
+            <strong><code>true</code></strong>
+            if not present then it's
+            <strong><code>false</code></strong
+            >.
+            <br />
+            <br />
+            It's Just check class present or not.
+          </ol>
+        </div>
+      </article>
+      <article>
+        <div class="content">
+          <header>
+            <h4>Event In DOM</h4>
+          </header>
+          <p>
+            <strong><q>What is a Event in DOM ?</q></strong>
+          </p>
+          <p></p>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
