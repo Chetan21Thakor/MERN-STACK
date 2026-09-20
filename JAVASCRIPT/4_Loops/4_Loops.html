@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Loops</title>
+    <script src="loops.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <article>
+        <div class="content">
+          <header>
+            <h1>Loops in Javascript</h1>
+          </header>
+          <strong
+            ><q>What is Looping Statements and why we need it's?</q></strong
+          >
+          <p>
+            In real life we are some task again and again on repeated mode<br />
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for example <br />
+            <br />
+            we are play our favorite song repeat on repeat . <br />
+            <br />
+            same if we are want to execute a particular block of code on repeat
+            mode then we need to use looping Statements. <br />
+            <br />
+            <dfn
+              >A Statements and instruction which used to repeat the execution
+              of the particular block of code it's called "Looping
+              Statements".</dfn
+            >
+          </p>
+          <p>
+            There are Main 3 three Looping Statements Available in Javascript.
+          </p>
+          <ol>
+            <li>for loop</li>
+            <li>while loop</li>
+            <li>do-while loop</li>
+          </ol>
+        </div>
+      </article>
+      <article>
+        <div class="content">
+          <header>
+            <h3>1. for loop</h3>
+          </header>
+          <p>
+            <strong>First</strong> we are learn about a
+            <strong>For loop</strong>. <br />
+            <br />
+            <q>What is a <strong>For Loop</strong>?</q><br />
+            Ans:A <strong>For Loop</strong> is a Looping statement which used to
+            do any task on loop. <br />
+            <br />
+            <strong>For Loop</strong> is Most of the time used when a number of
+            the Iteration are fixed. <br />
+            <br />
+            <strong>Syntax of For Loop</strong>
+            <br />
+            <br />
+
+            <code>
+              for (Initialization ; condition ; updating){
+              <br />
+              <br />
+              // some task
+              <br />
+              <br />
+              }
+            </code>
+            <br />
+            <br />
+            Inside <strong>for loop</strong> <br />
+            <strong>First</strong> is a initializing Statement which define
+            where the loop is start. it's starting pointe of the for loop.
+            <br />
+            <strong>Second</strong> is condition Statement which Define a where
+            the loop is end. it's ending pointe of the loop. <br />
+            <strong>Third</strong> is updating statement which define how the
+            iterator is updated. <br />
+            <br />
+            <dfn><strong>Iterate</strong> Means executing or run the loop.</dfn>
+            <br />
+            <dfn
+              ><strong>Iterator</strong> is a Variable this define inside a loop
+              . Which is responsible to initialization of the loop and updating
+              of the loop.</dfn
+            >
+            <br />
+            <dfn
+              ><strong>Iteration</strong>Means one single run of the loop. Which
+              start from initialization ,then check condition then execute a
+              loop task it's one Iteration. second Iteration is start from
+              updating the iterator.</dfn
+            >
+          </p>
+          <q>How the For Loop work?</q>
+          <p>
+            Ans: <strong>First</strong> when the for loop execution is start
+            then Initialization statement run or executed first to initialize
+            Iterator. <br />
+            <strong>Second</strong> ending condition is checked if it's return a
+            <strong>true</strong> then for loop task is executed. If this
+            condition return a false then loop is end. <br />
+            <strong>Third</strong> When after the checking the condition or when
+            it's returning a true for loop is executed then updating a iterator
+            then second time condition is check and so on.... until conditional
+            statement not return a false.
+          </p>
+        </div>
+      </article>
+      <article>
+        <div class="content">
+          <header>
+            <h3>2.While Loop</h3>
+          </header>
+          <p>
+            <strong> While Loop</strong> Perform a similar type of the task like
+            a for loop. But it's Syntax is different. <br />
+            <br />
+            <dfn><strong>while loop</strong></dfn> is also looping statement.
+            Which used to do task repeatedly. <br />
+            <br />
+            <strong>Syntax of the While Loop</strong> <br />
+            <br />
+            <code>
+              let i=1; initialization statement <br />
+              <br />
+
+              while (condition) { <br />
+              <br />
+              // some task
+              <br />
+              <br />
+              &nbsp;&nbsp;&nbsp;i++; updation statement <br />
+              }
+            </code>
+            <br />
+            <br />
+            Here initialization statement is out-side the while loop. it's
+            initialize a iterator. <br />
+            <br />
+            then while condition is checked if it's return
+            <strong> true </strong> then while loop task is executed. <br />
+            <br />
+            updation statement write inside a while at the end of the while
+            loop. it's update a iterator. <br />
+            <br />
+            <strong><q>How While Loop is executed?</q></strong> <br />
+            <br />
+            ans: <strong>first</strong> initialization statement run first to
+            initialize a iterator only for one. <br />
+            <br />
+            then <strong>While condition</strong> is checked if it's return the
+            true the while loop is executed otherwise not. <br />
+            <br />
+            <strong>Updation Statement </strong> is at the end of the while loop
+            it's update a iterator. then second time
+            <strong>while condition </strong> is checked then while loop is
+            executed. <br />
+            <br />
+            above two task done repeatedly until
+            <strong>while condition </strong>not return a false.
+          </p>
+        </div>
+      </article>
+      <article>
+        <div class="content">
+          <header>
+            <h3>do - while loop</h3>
+          </header>
+          <p>
+            <strong>do - While Loop</strong> Perform a similar type of the task
+            like a for loop and while. But it's Syntax is different. <br />
+            <br />
+            <dfn><strong>do - while loop</strong></dfn> is also looping
+            statement. Which used to do task repeatedly. <br />
+            <br />
+            <strong>Syntax of the do-while Loop</strong> <br />
+            <br />
+            <code>
+              let i=1; initialization statement <br />
+              <br />
+
+              do{ <br />
+              <br />
+              // some task
+              <br />
+              <br />
+              &nbsp;&nbsp;&nbsp;i++; updation statement <br />
+              } while (condition);
+            </code>
+            <br />
+            <br />
+            Here initialization statement is out-side the do-while loop. it's
+            initialize a iterator. <br />
+            <br />
+            then do - while loop done task atleast one time irrespectively
+            condition.
+            <br />
+            <br />
+            updation statement write inside a <strong>do</strong> block at the
+            end of the <strong>do</strong> block. it's update a iterator. <br />
+            <br />
+            <strong> <q>How Do - While Loop is executed?</q> </strong> <br />
+            <br />
+            ans: <strong>first</strong> initialization statement run first to
+            initialize a iterator only for one. <br />
+            <br />
+            then do - while done task atleast one time irrespectively condition.
+            <br />
+            <br />
+            then <strong>While condition</strong> is checked if it's return the
+            true the do - while loop is executed second time otherwise not.
+            <br />
+            <br />
+            <strong>Updation Statement </strong> is at the end of the do block
+            it's update a iterator. then second time
+            <strong>while condition </strong> is checked then if it's return a
+            true then do - while loop is executed. <br />
+            <br />
+            above two task done repeatedly until
+            <strong>while condition </strong>not return a false.
+          </p>
+        </div>
+      </article>
+      <article>
+        <div class="content">
+          <header>
+            <h3>for of Loop</h3>
+          </header>
+          <p>In Javascript it's also mostly used loop is for of &nbsp;Loop</p>
+          <p>
+            It's used to Iterate on only Iterable like Array , String on it's
+            index value.<br />
+            <br />
+            it's return a value at key or value at index.
+          </p>
+        </div>
+      </article>
+      <article>
+        <div class="content">
+          <header>
+            <h3>for in Loop</h3>
+          </header>
+          <p>In Javascript it's also mostly used loop is for in &nbsp;Loop</p>
+          <p>
+            It's used to Iterate on only Iterable like Array , String on it's
+            index. <br />
+            <br />
+            It's also used to Iterate on non-Iterable like Object on  it's
+            keys. <br> <br>
+            it's return a key.
+          </p>
+        </div>
+      </article>
+      <article>
+        <div class="content">
+          <header>
+            <h3>Infinite Loop</h3>
+          </header>
+          <p>
+            <strong> <q>What is Infinite loop ?</q> </strong> <br />
+            <br />
+            <dfn
+              >Ans : A Loop which never end it's called a Infinite Loop. It's
+              created when the looping condition always return a true.</dfn
+            >
+            <br />
+            <br />
+            Infinite loop not end until it's occupied memory or ram it's not has
+            been full.
+          </p>
+        </div>
+      </article>
+      <article>
+        <div class="content">
+          <header>
+            <h4>Break & Continue Statement</h4>
+          </header>
+          <p>
+            <q>What is a Break Statement?</q>
+            <dfn
+              >A Statement which is used to immediate stop execution of the
+              block of code at any specific condition and immediately exit from
+              that particular block it's called Break Statement.</dfn
+            >
+            <br />
+            <br />
+
+            <q>What is a Continue Statement?</q>
+            <dfn
+              >A Statement which is used to immediate skip one Iteration of the
+              any loop it's called continue statement.</dfn
+            >
+          </p>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
