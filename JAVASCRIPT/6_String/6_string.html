@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String in JS</title>
+    <style>
+      table,thead,td,tbody,tr,th{
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center;
+      }
+    </style>
+    <!-- <script src="./Assignment/question.js"></script> -->
+    <!-- <script src="./Assignment/question2.js"></script>  -->
+    <script src="./Assignment/question3.js"></script> 
+    <!-- <script src="string.js"></script> -->
+  </head>
+  <body>
+    <header>
+      <h1>String in JS</h1>
+    </header>
+    <main>
+      <article>
+        <div class="content">
+          <strong><q>What is String.</q></strong>
+          <p>
+            <dfn
+              >In Normal word string is any textual data for example sentence,
+              massage , password , any text it's called string.</dfn
+            >
+            <br />
+            <br />
+            <dfn
+              >String in javascript is collection of the unicode character.</dfn
+            >
+            <br />
+            <br />
+
+            <dfn
+              >In javascript any textual data which covered by Double Quot("
+              "),Single Quot (' ') or backticks (` `) it's a string.</dfn
+            >
+            <br />
+            <br />
+            <strong
+              >String are Immutable in javascript. It's means you can't make any
+              changes in original string.</strong
+            >
+          </p>
+        </div>
+      </article>
+      <article>
+        <div class="content">
+          <strong><q>How to create String.</q></strong>
+          <p>There are Four Way to Create string in Javascript.</p>
+          <ol>
+            <li>Using Double Quot (" ")</li>
+            <li>Using single Quot (' ')</li>
+            <li>Using Backticks (``)</li>
+            <li>Using String Constructor</li>
+          </ol>
+          <strong>1. Using Double Quot (" ")</strong>
+          <p>It'a very simple most widely used way of creating string in js.</p>
+          <pre>
+            <code>
+                // * 1. Using Double Quot (" ")
+                let string="hi how are you?";
+
+                console.log(string , " type of String is : "+typeof string1); //* ans : string 
+            </code>
+          </pre>
+          <strong>2. Using single Quot (' ')</strong>
+          <p>It'a very simple most widely used way of creating string in js.</p>
+          <pre>
+            <code>
+                // * 2. Using single Quot (' ')
+                let string1='What are you doing?';
+                console.log(string1 , " type of String1 is : "+typeof string1); //* ans : string
+            </code>
+          </pre>
+          <strong>3. Using Backticks (` `)</strong>
+          <p>It'a very simple most widely used way of creating string in js.</p>
+          <p>
+            it'a used when you want to insert a variable or any expression in
+            string. <br />
+            <br />
+            A string which is created using a Backticks it's called "Template
+            Literal" in javascript. <br />
+            <br />
+            Template Literal is special way to creating string in js using
+            Backticks. <br />
+            <br />
+            You can easily insert any expression or variable in template literal
+            using "${}" this space holder. <br />
+            <br />
+            Inserting a Variable and Expression Direct in string it's called
+            String interpolation.
+          </p>
+          <pre>
+            <code>
+                // * 3. Using Backticks (` `)
+                // *it'a used when you want to insert a variable or any expression in string.
+                // * A string which is created using a Backticks it's called "Template Literal" in javascript.
+                // * Template Literal is special way to creating string in js using Backticks.
+                // * You can easily insert any expression or variable in template literal using "${}" this space holder.
+                // * Inserting a Variable and Expression Direct in string it's called String interpolation.
+
+                let string2=`I am fine`;
+
+                console.log(string1 , " type of String1 is : "+typeof string2);
+
+                let a =10 , b=20;
+
+                let sumStr=`sum of a + b  is : ${a + b }`;
+                console.log(sumStr);
+            </code>
+          </pre>
+          <strong>4. Using String("text")</strong>
+          <pre>
+            <code>
+                // * 4. Using String("text")
+                let name =new String("Chetan");
+                console.log(name); //* ans : [String: 'Chetan']
+            </code>
+          </pre>
+        </div>
+      </article>
+      <article>
+        <div class="content">
+          <header>
+            <h4>Indexing in String</h4>
+          </header>
+          <img src="./Screenshot 2026-08-30 162801.png" alt="index value" />
+          <p>
+            String has index. <br />
+            <br />
+            String has two type of indexing. <br />
+            <br />
+            Using index value you can access a string each character. <br />
+            <br />
+            <strong>1.Positive index </strong><br />
+            <br />
+            Positive indexing start from 0 and end at n-1. 0 index means first
+            character of the string. n-1 index means last character of the
+            String <br />
+            <br />
+            <br />
+            <strong>2.Negative index </strong> <br />
+            <br />
+            Negative indexing start from -1 and end at -n. -1 index means last
+            character of the string. -n index means last character of the String
+          </p>
+        </div>
+      </article>
+
+      <article>
+        <div class="content">
+          <header>
+            <h4>Loops for String</h4>
+          </header>
+          <p>
+            String has a index so you can easily iterate on string and access a
+            each character of the string.
+          </p>
+          <p>We can use three Different loop on string.</p>
+          <ol>
+            <li>Normal loop</li>
+            <li>for of loop</li>
+            <li>for in loop</li>
+          </ol>
+          <strong>1. Normal loop </strong>
+          <p>It's start from 0 index,end at n-1.</p>
+          <pre>
+            <code>
+                for(let i=0;i&lt name.length;i++){
+
+                console.log(name[i]);
+
+                }
+            </code>
+          </pre>
+          <strong>2. for of loop </strong>
+          <p>It's used to iterate on the each character of the string.</p>
+          <pre>
+            <code>
+                for(ch of str){
+
+                console.log( ch);
+
+                }
+            </code>
+          </pre>
+          <strong>3. for in loop </strong>
+          <p>It's used to iterate on the each index of the string.</p>
+          <pre>
+            <code>
+                for(idx in str){
+
+                console.log(idx);
+
+                }
+            </code>
+          </pre>
+        </div>
+      </article>
+      <article>
+        <div class="content">
+          <header>
+            <h4>Escape Sequence Character</h4>
+          </header>
+          <strong>What is Escape Sequence Character?</strong>
+          <p>
+            <dfn
+              >it's special character which is combination of the two character
+              but treated as one single character.</dfn
+            >
+            <br />
+            <br />
+            for example
+            <br />
+            <br />
+            '\t' ,'\n' , '\\t' , '\\n ', '\\' , '\"' , ' \' '
+          </p>
+        </div>
+      </article>
+      <article>
+        <div class="content">
+          <header>
+            <h4>Properties and Method (member Function) of String</h4>
+          </header>
+          <strong><q>What is Properties ?</q></strong>
+          <p><dfn>A Properties is variable of the object.</dfn></p>
+
+          <strong><q>What is Method?</q></strong>
+          <p><dfn>A Method is Function of the object.</dfn></p>
+
+          <strong>Properties v/s Method</strong>
+          <table>
+            <thead>
+              <th>Properties</th>
+              <th>Method</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td> give only information.</td>
+                <td> do some task then return something.</td>
+              </tr>
+              <tr>
+                <td> no need to call.</td>
+                <td> need to call.</td>
+              </tr>
+              <tr>
+                <td> no need to write () parenthesis.</td>
+                <td> need to write () parenthesis.</td>
+              </tr>
+              <tr>
+                <td> don't perform task</td>
+                <td> perform task</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+      <article>
+        <div class="content">
+            <header>
+                <h4>Some Useful Method of the String</h4>
+            </header>
+            <img src="./method.png" alt="Method of the String">
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
