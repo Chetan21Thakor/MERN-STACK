@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Todo List</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main class="todo-app" id="todoApp">
+		<p class="eyebrow">Daily planner</p>
+		<h1>My Todo List</h1>
+		<p class="intro">Keep your day clear, one task at a time.</p>
+
+		<form class="task-form">
+			<label for="task-input">New task</label>
+			<div class="input-row">
+				<input
+					type="text"
+					id="task-input"
+					name="task"
+					placeholder="What needs to be done?"
+					autocomplete="off"
+				>
+				<button type="submit" id="taskAddBtn">Add Task</button>
+			</div>
+		</form>
+
+		<section class="tasks-section" aria-labelledby="tasks-heading">
+			<div class="section-heading">
+				<h2 id="tasks-heading">Tasks</h2>
+				<span class="task-count" id="taskCount">0 tasks</span>
+			</div>
+			<ul class="task-list"  id ="taskList" aria-live="polite">
+				<li class="empty-state">Your tasks will appear here.</li>
+			</ul>
+		</section>
+
+		<section class="completed-section" aria-labelledby="completed-heading">
+			<div class="section-heading">
+				<h2 id="completed-heading">Completed Tasks</h2>
+				<button type="button" id="completedTaskBtn">Show Completed</button>
+			</div>
+			<ul class="completed-list" id="completedTaskList" hidden></ul>
+		</section>
+	</main>
+    <script src="app.js"></script>
+</body>
+</html>
