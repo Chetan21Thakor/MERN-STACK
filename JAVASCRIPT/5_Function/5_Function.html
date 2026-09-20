@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5 Function IN JS</title>
+    <style>
+      th,
+      thead,
+      tbody,
+      tr,
+      td {
+        border: 1px solid black;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>5 Function In Javascript</h1>
+    </header>
+    <main>
+      <article>
+        <div class="content">
+          <head>
+            <h3>Function</h3>
+          </head>
+          <strong><q>What is Function and Why we need it?</q></strong>
+          <p>
+            In real life we take example of the TV remote. <br />
+            <br />
+            In TV remote when we pressing Power button then TV get started and
+            second time we press a power button then TV get off. <br />
+            <br />
+            Basically Power task is define when press it TV on-off task or
+            Function. <br />
+            Function is similar kind when Function called Function do it's task.
+            <br />
+          </p>
+          <p>
+            <dfn
+              >Function is block of code which perform a particular task when
+              it's called or invoked.</dfn
+            >
+          </p>
+          <p>Function is used for code reusability.</p>
+          <p>Function is used for better code readability.</p>
+          <p>Function is used for reduce a code redundancy.</p>
+        </div>
+        <strong><q>What is function parameter?</q></strong>
+        <p>
+          Parameter is variable which are declare at time of the function
+          declaration inside function parenthesis. <br />
+          It's scope is function scope. it's not accessible outside a function.
+          <br />
+          It's store or copy the value of the Actual Arguments.
+        </p>
+        <strong><q>What is function Actual Arguments?</q></strong>
+        <p>
+          When we are calling a function and passing some value as parameter
+          it's called "Actual Arguments".
+        </p>
+      </article>
+      <article>
+        <div class="content">
+          <header>
+            <h3>Different Way of Creating a Function</h3>
+          </header>
+          <p>There are Four way of the Creating a Function.</p>
+          <ol>
+            <li>without parameter list and without return</li>
+            <li>without parameter list and with return</li>
+            <li>with parameter list and without return</li>
+            <li>with parameter list and with return</li>
+          </ol>
+          <pre>
+            <code>
+                // *  1.without parameter list and without return
+
+                function sayHello() {
+                console.log("Hello ! Hi , How are you");
+                }
+
+                sayHello();
+
+                // *  2.without parameter list and with return
+
+                function  returnStr(){
+                    return "Hello ! Hi , How are you";
+                }
+
+                let res=returnStr();
+                console.log(res);
+
+                // *  3.with parameter list and without return
+
+                let name1="    Chetan Dhanaji Thakor   ";
+
+                function  printName(name){
+                    console.log(`${name}`);
+                }
+
+                printName(name1);
+
+                // *  4.with parameter list and with return
+
+                function  printUserName(name){
+                    return `@${name.trim().toLowerCase().split(" ").join("")}_${name.length}`;
+                }
+
+                console.log( printUserName(name1));
+            </code>
+          </pre>
+          <strong> <q>What is Default Parameter?</q> </strong>
+          <p>
+            When we are calling function and function need value as parameter to
+            perform it's task but we are not passing it's value that time we
+            want function use Default value of that parameter then we use
+            "Default parameter".
+          </p>
+          <p>
+            default parameters allow you to assign default values to function
+            parameters. <br />
+            <br />If no value (or undefined) is passed for that parameter when
+            the function is called, the default value is used instead.
+          </p>
+          <p>
+            Note: <br />
+            ❑ Only undefined triggers the default value. <br />
+            <br />
+            ❑ You can use expressions as default values. <br />
+            <br />
+          </p>
+          <pre>
+            <code>
+                // *Default Parameter
+
+                function sum(a,b=0){
+                    return a+b;
+                }
+
+                console.log(sum(1)); //* ans: 1
+                console.log(sum(1,3)); //* ans: 4
+            </code>
+          </pre>
+        </div>
+      </article>
+      <article>
+        <div class="content">
+          <header>
+            <h3>Types Of Function</h3>
+          </header>
+          <table>
+            <thead>
+              <th>#</th>
+              <th>Function Type</th>
+              <th>Description</th>
+              <th>example</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Function Declaration (normal function)</td>
+                <td>Declared with the function keyword, can be hoisted</td>
+                <td>
+                  function sayHello(){ <br />console.log("Hello ! Hi , How are
+                  you"); <br />
+                  }
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Function Expression</td>
+                <td>Stored in a variable; not hoisted</td>
+                <td>
+                  let sayHello1=function() { <br />
+                  console.log("Hello ! Hi , How are you"); <br />
+                  }
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Arrow Function (fat arrow function)</td>
+                <td>Shorter syntax, introduced in ES6</td>
+                <td>
+                  let printUserName1=(name)=>{ <br />
+                  return `@${name.trim().toLowerCase().split("
+                  ").join("")}_${name.length}`; <br />
+                  }
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Anonymous Function</td>
+                <td>A function without a name, often used in expressions</td>
+                <td>
+                  setTimeout(()=>{ <br />
+                  console.log("hello") <br />
+                  },5000);
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>IIFE (Immediately Invoked Function Expression)</td>
+                <td>A function that runs as soon as it's defined</td>
+                <td>
+                  (()=>{ <br />
+                  console.log("hey "); <br />
+                  })();
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
