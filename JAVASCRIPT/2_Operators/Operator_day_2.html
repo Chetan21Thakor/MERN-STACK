@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #000;
+        color: #fff;
+      }
+      table,
+      thead,
+      tr,
+      td,
+      th {
+        border: 1px solid aqua;
+        margin: 10px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Operator in JavaScript</h1>
+    </header>
+    <main>
+      <article>
+        <div class="content">
+          <strong><q>What is Operator?</q></strong>
+          <p>
+            <dfn>
+              Operator is special Symbol which tell to compiler do some
+              operation.value or variable on which this operation is performed
+              is called "Operands".
+            </dfn>
+          </p>
+          <p>For Example</p>
+          <img src="./Mern Stack javascript.png" alt="Operator" />
+          <h3>Types of the Operator</h3>
+          <p>pneumonic for remember the Data Type in js is : NNSSBBU</p>
+          <ol>
+            <li>N for : Number</li>
+            <li>N for : Null</li>
+            <li>S for : Symbol</li>
+            <li>S for : String</li>
+            <li>B for : Boolean</li>
+            <li>B for : BigInt</li>
+            <li>U for : Undefined</li>
+          </ol>
+          <p>pneumonic for remember the Type of Operator in js is : AABCDLT</p>
+          <ol>
+            <li>A for : Arithmetic Operator</li>
+            <li>A for : Assignment Operator</li>
+            <li>B for : Bit Wise Operator</li>
+            <li>C for : Comparison Operator</li>
+            <li>D for : Decrement ad increment : Unary Operator</li>
+            <li>L for : Logical Operator</li>
+            <li>T for : Ternary Operator</li>
+          </ol>
+        </div>
+      </article>
+      <article>
+        <div class="content">
+          <header>
+            <h4>Arithmetic Operator</h4>
+          </header>
+        </div>
+        <p><strong>List of the Arithmetic Operator</strong></p>
+        <ol>
+          <li>"+" : It's add two Number for example " 2 + 5 = 7"</li>
+          <li>
+            "-" : It's Subtract right hand side Number from left hand side
+            number for example " 5 - 3 = 2"
+          </li>
+          <li>"*" : It's Multiply two Number for example " 2 * 5 = 10"</li>
+          <li>"/" : It's Divide Number for example " 12 / 5 = 2"</li>
+          <li>"%" : It's return remainder for example " 13 % 5 = 2"</li>
+          <li>"**" : It's return a^b for example" 2 ** 3 = 8"</li>
+        </ol>
+        <p><strong>Example</strong></p>
+        <pre>
+                <code>
+                    console.log("10 + 4" + " = " + `${10 + 4}`);//* ans : 14
+                    console.log("10 - 4" + " = " + `${10 - 4}`);//* ans : 6
+                    console.log("10 * 4" + " = " + 10 * 4);//* ans : 40
+                    console.log("10 / 4" + " = " + 10 / 4);//* ans : 2.5
+                    console.log("10 % 4" + " = " + 10 % 4);//* ans : 2
+                    console.log("10 ** 4" + " = " + 10 ** 4);//* ans : 10000
+                </code>
+            </pre>
+      </article>
+      <article>
+        <div class="content">
+          <header>
+            <h4>Assignment Operator</h4>
+          </header>
+        </div>
+        <p><strong>List of Assignment Operator</strong></p>
+        <p>it's assign a right hand side value into left hand side variable.</p>
+        <p>
+          Compound Assignment Operator is short hand. In express When you want
+          to assign and do Operation with same variable then you can use
+          Compound Assignment Operator
+        </p>
+        <p><strong>for example</strong></p>
+        <code>
+          let a = 5; a=a+5; // * ans=10 a+=5 // * ans=15 both are doing same
+          thing second is just short hand of write first one statement. <br> <br>
+          console.log(`a = a + 10 = ${(a = a + 10)} is Equal to a += 10 = ${(b
+          += 10)}`);//* ans : 15
+        </code>
+        <ol>
+          <li>=</li>
+          <li>"+="</li>
+          <li>"-="</li>
+          <li>"*="</li>
+          <li>"/="</li>
+          <li>"%="</li>
+          <li>"**="</li>
+        </ol>
+        <p><strong>Example</strong></p>
+        <pre>
+                <code>
+                    // * Compound Assignment Operator
+
+                    let a = 5;
+                    let b = 5;
+
+                    console.log(`a = a + 10 = ${(a = a + 10)} is Equal to  a += 10 = ${(b += 10)}`);//* ans : 15
+                    console.log(`a = a - 10 = ${(a = a - 10)} is Equal to  a -= 10 = ${(b -= 10)}`);//* ans : 5
+                    console.log(`a = a * 10 = ${(a = a * 10)} is Equal to  a *= 10 = ${(b *= 10)}`);//* ans : 50
+                    console.log(`a = a / 10 = ${(a = a / 10)} is Equal to  a /= 10 = ${(b /= 10)}`);//* ans : 5
+                    console.log(`a = a % 10 = ${(a = a % 10)} is Equal to  a %= 10 = ${(b %= 10)}`);//* ans : 5
+                    console.log(`a = a ** 2 = ${(a = a ** 2)} is Equal to  a **= 2 = ${(b **= 2)}`);//* ans : 25
+                </code>
+            </pre>
+      </article>
+      <article>
+        <div class="content">
+          <header>
+            <h4>Comparison Operator</h4>
+          </header>
+        </div>
+        <p><strong>List of Comparison Operator</strong></p>
+        <p>
+          Comparison Operator are used to compare two value or variable. it's
+          compare a left side value with right hand side value.
+        </p>
+        <p>Note : Comparison Operator Always Return a Boolean value.</p>
+        <p><strong>for example</strong></p>
+        <code>
+          let x = 29; let y = 12; console.log(`x > y ${ x > y}`);//* ans : true
+        </code>
+        <ol>
+          <li>
+            "&gt;" : it's check or compare a left side value is greater then
+            right hand side value if yes then it's return a True.
+          </li>
+          <br />
+          <li>
+            "&lt;" : it's check or compare a left side value is lesser then
+            right hand side value if yes then it's return a True.
+          </li>
+          <br />
+          <li>
+            "&lt;=": it's check or compare a left side value is lesser or Equal
+            then right side value if yes then it's return a True.
+          </li>
+          <br />
+          <li>
+            "&gt;=": it's check or compare a left side value is greater or Equal
+            then right side value if yes then it's return a True.
+          </li>
+          <br />
+          <li>
+            "==" : it's check or compare a left side value is Equal to right
+            side value if yes then it's return a True. it's lossy equal to
+            operator it's not check it's data type it's just check only value if
+            both value are same then return true.
+          </li>
+          <br />
+          <li>
+            "!=" : it's check or compare a left side value is Not Equal to right
+            side value if yes then it's return a True. it's lossy Not equal to
+            operator it's not check it's data type it's just check only value if
+            both value are not equal then return true.
+          </li>
+          <br />
+          <li>
+            "===" : it's check or compare a left side value is Equal to right
+            side value if yes then it's return a True. it's strictly equal to
+            operator it's check it's data type first if data type is Different
+            then also return false then it's check value if both value are same
+            then return true.
+          </li>
+          <br />
+          <li>
+            "!==" : it's check or compare a left side value is Not Equal to
+            right side value if yes then it's return a True. it's strictly Not
+            equal to operator it's check it's data type first if data type is
+            Different then also return true then it's check value if both value
+            are not equal then return true.
+          </li>
+          <br />
+        </ol>
+        <p><strong>Example</strong></p>
+        <pre>
+                <code>
+                   // * Comparison Operator
+
+                   // * it's always return a boolean value only.
+
+                    let x = 29;
+                    let y = 12;
+
+                    console.log(`x &gt; y ${ x &gt; y}`);//* ans : true
+                    console.log(`x&lt; y ${ x&lt; y}`);//* ans : false
+                    console.log(`x&lt; y ${ x&lt;= y}`);//* ans : false
+                    console.log(`x &gt; y ${ x &gt;= y}`);//* ans : true
+                    console.log(`x == y ${ x == y}`);//* ans : false
+                    console.log(`x === y ${ x === y}`);//* ans : false
+                    console.log(`x !== y ${ x !== y}`);//* ans : true
+                    console.log(`x != y ${ x != y}`);//* ans : true
+                </code>
+            </pre>
+        <p>
+          Lossy Equal to internally work on the strictly equal to and type
+          coercion. If left side value data it's Different from right hand side
+          value data then it's convert any one of them data type
+          automatically.after doing type coercion it's check both value are
+          equal or not. If both value are equal then it's return
+          <strong>true</strong> otherwise false.
+        </p>
+        <strong
+          ><q>How Actually work with object and Primitive data type</q></strong
+        >
+        <pre>
+                <code>
+                    const obj = {
+                        age: 25,
+                        name: "Chetan",
+                        isMarried: false,
+
+                        valueOf() {
+                            console.log("2️⃣ valueOf() called");
+                            return this.isMarried;
+                        },
+                        
+                        toString() {
+                            console.log("3️⃣ toString() called");
+                            return this.name;
+                        },
+
+                        toNumber() {
+                            console.log("4 toNumber() called");
+                            return this.age;
+                        },
+
+                        [Symbol.toPrimitive](hint) {
+
+                            console.log(`1️⃣ toPrimitive() called — hint: "${hint}"`);
+                            if (hint === "string") {
+                            return this.toString();
+                            } else if (hint === "number") {
+                            return this.toNumber();
+                            } else if (hint === "default"){
+                                return this.valueOf();
+                            }
+                        },
+                    };
+
+                    console.log("--- Test: number context ---");
+                    console.log(obj- 1);
+
+                    console.log("--- Test: string context ---");
+                    console.log(`${obj}`);
+
+                    console.log("--- Test: default context ---");
+                    console.log(obj + 1);
+                </code>
+            </pre>
+        <p>
+          In Any Expression when we are doing any operation in this Expression
+          if data type of the value or variable it's are different then if both
+          value or variable data type Primitive but one is boolean and second
+          value is number then it's directly convert using Boolean() , Number(),
+          String() based on the operation requirement. <br />
+          <br />
+          If Operation Require a number then boolean data converted into a
+          number using Number(),string converted into number using Number(). if
+          operation Require string data then it's converted into a string using
+          String(); <br />
+          <br />
+
+          But if in Expression one is object type data and second is Primitive
+          then object type data converted in Primitive data using
+          <strong>[Symbol.toPrimitive](hint)</strong> but first check object
+          contain this method or not just because of the literal object don't
+          contain this method. only built in object like String, Array ect
+          contain this method. <br />
+          <br />
+
+          If built in object then
+          <strong>[Symbol.toPrimitive](hint)</strong> it's called using a hint
+          toString(), toNumber() ,valueOf() function based on the operation
+          Require which type of the data. <br />
+          <br />
+
+          If In Expression contain literal then it's return "[object][object]"
+          string. <br />
+          <br />
+
+          for example <br />
+          <br />
+
+          <code>
+            const s={ <br />
+            name:"Chetan" <br />
+            }; <br />
+
+            console.log(true + s);// <br />
+            console.log(true - s); <br />
+            console.log(1 + s); <br />
+            console.log(1 - s); <br /> </code
+          ><br />
+          <br />
+          Output : <br /><br />
+          <output>
+            true[object Object] <br />
+            NaN <br />
+            1[object Object] <br />
+            NaN <br />
+          </output>
+        </p>
+      </article>
+      <article>
+        <header>
+          <h4>Logical Operator</h4>
+        </header>
+        <p><strong>List of the Logical Operator.</strong></p>
+        <ol>
+          <li>
+            && (AND) : If all condition are <strong>true</strong> then only then
+            it's return <strong>true</strong>.
+          </li>
+          <li>
+            || (OR) : If all condition are <strong>false</strong> then only then
+            it's return <strong>false</strong>.
+          </li>
+          <li>
+            ! (NOT) : it's flip <strong>True</strong> to
+            <strong>False</strong> and <strong>False</strong> to
+            <strong>True</strong>
+          </li>
+        </ol>
+        <p>
+          Logical Operator always return a boolean value true or false. it's
+          used to combine multiple condition.
+        </p>
+        <strong>1. && (AND)</strong>
+        <p>
+          If all the condition are return <strong>True</strong> then only then
+          it's return <strong>True</strong>. If any one condition return a
+          <strong>False</strong> then it's return <strong>False</strong>.
+        </p>
+        <strong>Logic Table of the && (AND)</strong>
+        <table>
+          <thead>
+            <th>Input A</th>
+            <th>Input B</th>
+            <th>Output</th>
+          </thead>
+          <tr>
+            <td>True</td>
+            <td>True</td>
+            <td>True</td>
+          </tr>
+          <tr>
+            <td>True</td>
+            <td>False</td>
+            <td>False</td>
+          </tr>
+          <tr>
+            <td>False</td>
+            <td>True</td>
+            <td>False</td>
+          </tr>
+          <tr>
+            <td>False</td>
+            <td>False</td>
+            <td>False</td>
+          </tr>
+        </table>
+
+        <strong>2. || (OR)</strong>
+        <p>
+          If all the condition are return <strong>False</strong> then only then
+          it's return <strong>False</strong>. If any one condition return a
+          <strong>True</strong> then it's return <strong>True</strong>.
+        </p>
+        <strong>Logic Table of the || (OR)</strong>
+        <table>
+          <thead>
+            <th>Input A</th>
+            <th>Input B</th>
+            <th>Output</th>
+          </thead>
+          <tr>
+            <td>True</td>
+            <td>True</td>
+            <td>True</td>
+          </tr>
+          <tr>
+            <td>True</td>
+            <td>False</td>
+            <td>True</td>
+          </tr>
+          <tr>
+            <td>False</td>
+            <td>True</td>
+            <td>True</td>
+          </tr>
+          <tr>
+            <td>False</td>
+            <td>False</td>
+            <td>False</td>
+          </tr>
+        </table>
+
+        <strong>3. ! (NOT)</strong>
+        <p>
+          it's flip <strong>True</strong> to <strong>False</strong> and
+          <strong>False</strong> to <strong>True</strong>.
+        </p>
+        <strong>Logic Table of the ! (NOT)</strong>
+        <table>
+          <thead>
+            <th>Input A</th>
+            <th>Output</th>
+          </thead>
+          <tr>
+            <td>True</td>
+            <td>False</td>
+          </tr>
+          <tr>
+            <td>False</td>
+            <td>True</td>
+          </tr>
+        </table>
+      </article>
+      <article>
+        <header>
+            <h4>Unary Operator</h4>
+        </header>
+        <p>A Operator which Require only one Operand to done it's work it's called Unary Operator.</p>
+        <pre>
+             Unary  Operator ++(Increment Operator ) --(Decrement Operator )
+
+             ++(Increment Operator ) : Increases value by one
+            ++ Post(Increment Operator ) : use first value then increase
+            ++ Pre(Increment Operator ) : increase first then use
+
+             ++(Decrement Operator ) : Decreases value by one
+            -- Post(decrement Operator ) : use first value then decrease
+            -- Pre(decrement Operator ) : decrease first then use
+        </pre>
+        <pre>
+            <code>
+                let a = 6;
+                let b = 5;
+                let c = 3;
+
+                console.log( a++ + --b * c-- / --a + b++ % ++c ); //* ans : 9 *//
+                console.log(object)
+            </code>
+        </pre>
+      </article>
+      <article>
+        <div class="content">
+          <header>
+            <h3>Ternary Operator</h3>
+          </header>
+          <p><strong>Syntax of Ternary Operator</strong></p>
+          <pre>
+            <code>
+                (condition) ? st1 : st2 ;
+            </code> 
+            <code>
+                let age=19;
+
+               let result= (age >18 ) ? "adult": "not adult";
+
+               console.log(result);
+            </code>
+          </pre>
+          <p>
+            Ternary is Operator. it's not statement.After checking condition
+            then based on condition it's return a result.
+          </p>
+          <strong><q>How Ternary Operator work?</q></strong>
+          <p>
+            step 1 : It's check condition. <br /> <br>
+            step 2 : If condition return <strong>True</strong> then it's return
+            result which immediately come after a question mark(?). <br />If
+            condition return <strong>false</strong> then it's return a result
+            which immediately come after colon (:).
+          </p>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
