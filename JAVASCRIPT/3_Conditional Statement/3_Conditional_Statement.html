@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3_Conditional Statement</title>
+    <script src="./conditionalStatement.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>3 Conditional Statement</h1>
+    </header>
+    <main>
+      <article>
+        <div class="content">
+          <header>
+            <h3>Conditional Statement</h3>
+          </header>
+          <strong
+            ><q>What is Conditional Statement and why we need it?</q></strong
+          >
+          <p>
+            In Real life we are doing some task based on some specific condition
+            or situation <br />
+            <br />
+            for example <br />
+            1.if today weather is cold then i drink a tea. <br />
+            2.if today Cloud is raining then i will go office with umbrella.
+            <br />
+            <br />
+            in similar way if we need to do some task based on some specific
+            condition then we need to use a conditional Statement. <br />
+            <br />
+            <dfn
+              >A Statement or instruction which used to define a condition it's
+              called conditional Statement.</dfn
+            >
+            <br />
+            <br />
+            if - else , if- else if -else, switch this all are conditional
+            Statement in Javascript. and one Ternary Operator(? :). it's
+            Operator not Statement.
+          </p>
+        </div>
+      </article>
+      <article>
+        <div class="content">
+          <header>
+            <h3>if - else Conditional Statement</h3>
+          </header>
+          <p><strong>Syntax of if -else conditional Statement.</strong></p>
+          <pre>
+            <code>
+                let weather = "rainy";
+
+                if (weather === "rainy") {
+                console.log("take Umbrella.");
+                } else {
+                console.log("Enjoy Sunshine.");
+                }
+            </code>
+          </pre>
+          <strong><q>How if -else work.</q></strong>
+          <p>
+            execution of code run top to bottom line by line in if-else
+            Statement.
+          </p>
+          <p>
+            First if check a condition which written inside a parenthesis. if
+            this condition return <strong>true</strong> then a code which
+            written inside if block it's executed and skip else block code. if
+            this condition return <strong>false</strong> then else block of code
+            executed.
+          </p>
+          <p>if work on truthy and falsely value.</p>
+          <pre style="font-size: 14px">
+            if else Statement work from top  to bottom 
+
+            step 1 : it's check a condition which is define inside a if statement .
+
+            step 2: A condition is return "True" then if block of code is run or executed and skip else block of code.
+
+            step 3: A condition is return "false" then else block of code is run or executed.
+            else part is Optional if you want to skip to write else block you can skip.
+            else always come with one if statement.
+          </pre>
+          <p>
+            You can write a multiple if statement to check multiple condition.js
+            engine check each if statement condition and any one of them return
+            <strong>true</strong> then execute a that particular if block code.
+            If all <code>if condition</code> return <strong>true</strong> then
+            all if block of code execute.
+          </p>
+          <pre>
+            <code>
+                let marks = 85;
+
+                if (marks >= 50) {
+                console.log("You passed.");
+                }
+
+                if (marks >= 80) {
+                console.log("You got an A grade.");
+                }
+            </code>
+          </pre>
+          <p>
+            When you need to check multiple condition but execute any one
+            <code>if</code> block code which <code>if condition</code> first
+            return true then you have to use a
+            <code>if-else if -else </code> conditional statement.
+          </p>
+          <pre>
+            <code>
+                let score = 75;
+
+                if (score >= 90) {
+                console.log("Grade A");
+                } else if (score >= 60) {
+                console.log("Grade B");
+                } else {
+                console.log("Grade C");
+                }
+            </code>
+          </pre>
+          <p>
+            It's also executed from top to bottom same like
+            <code>if</code> statement. <br />
+            Here is some difference is if from top to bottom any one
+            <code>if</code> condition return <strong>true</strong> then it's
+            execute that<code>if</code> block of code and skip bottom all
+            <code>else if </code>block code although it's can be true. <br />
+            <code>else </code>block code run only when above all condition
+            return <strong>false</strong>.
+          </p>
+        </div>
+      </article>
+      <article>
+        <div class="content">
+          <header>
+            <h3>Switch Statement</h3>
+          </header>
+          <p><strong>Syntax of Switch Statement.</strong></p>
+          <pre>
+            <code>
+                let day="Sunday";
+
+                switch(day){
+                    case "Monday":console.log("Working Day");
+                                        break;
+                    case "Tuesday":console.log("Working Day");
+                                        break;
+                    case "Wednesday":console.log("Working Day");
+                                        break;
+                    case "Thursday":console.log("Working Day");
+                                        break;
+                    case "Friday":console.log("Working Day");
+                                        break;
+                    case "Saturday":console.log("HoliDay");
+                                        break;
+                    case "Sunday":console.log("HoliDay");
+                                        break;
+                    default:console.log("Invalid day");
+                }
+            </code>
+        </pre>
+          <p>
+            <code>switch</code> keyword then <code>()</code> parenthesis inside
+            this parenthesis test case variable which value is checked it's
+            matched with any case. then code{}curly braces.Inside this
+            <code>{}</code> define different case and last default case.
+          </p>
+          <strong><q>How switch statement work?</q></strong>
+          <p>
+            step 1 : switch statement first check test case variable value
+            matched with any case. <br />
+            step 2 : If it's matched then it's execute a that particular code
+            which written in case. <br />
+            step 3 : if after executing code which written in case if it's not
+            find break statement then it's execute all the case which come after
+            first matched case until default case just because of that after
+            each case you must have to written a <code>break statement</code>.
+            <br /><code>break statement</code> basically break or exit then
+            control outside the switch statement it's help to stop execution
+            after executing a matched case. step 4 : if test case variable not
+            match with any case then only then default case is execute.
+          </p>
+          <p>
+            If want to multiple case share same code then you can use
+            fall-through case.
+          </p>
+          <pre>
+            <code>
+                //* example of  fall-through case
+
+                switch(day){
+                    case "Monday":
+                    case "Tuesday":
+                    case "Wednesday":
+                    case "Thursday":
+                    case "Friday":console.log("Working Day");
+                                        break;
+                    case "Saturday":
+                    case "Sunday":console.log("HoliDay");
+                                        break;
+                    default:console.log("Invalid day");
+                }
+            </code>
+        </pre>
+          <p>
+            <strong
+              >Switch Statement internally work on the "===" on strictly equal.
+              it's also used Jump table for finding a case fast.</strong
+            >
+          </p>
+        </div>
+      </article>
+      <article>
+        <div class="content">
+          <header>
+            <h3>Ternary Operator</h3>
+          </header>
+          <p><strong>Syntax of Ternary Operator</strong></p>
+          <pre>
+            <code>
+                (condition) ? st1 : st2 ;
+            </code> 
+            <code>
+                let age=19;
+
+               let result= (age >18 ) ? "adult": "not adult";
+
+               console.log(result);
+            </code>
+          </pre>
+          <p>
+            Ternary is Operator. it's not statement.After checking condition
+            then based on condition it's return a result.
+          </p>
+          <strong><q>How Ternary Operator work?</q></strong>
+          <p>
+            step 1 : It's check condition. <br /> <br>
+            step 2 : If condition return <strong>True</strong> then it's return
+            result which immediately come after a question mark(?). <br />If
+            condition return <strong>false</strong> then it's return a result
+            which immediately come after colon (:).
+          </p>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
